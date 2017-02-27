@@ -1,19 +1,181 @@
 <html>
     <head>
+        <meta charset="utf-8" />
         <style type="text/css">
-        
+
+            /* Hairline, specified as separate family */
             @font-face {
-    font-family: OutputSansWeb;
-    src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.eot");
-    src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
+                font-family: OutputSansWebHair;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Hairline_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Hairline_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Hairline_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Hairline_TRIAL.woff") format("woff");
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: OutputSansWebHair;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-HairlineItalic_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-HairlineItalic_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-HairlineItalic_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-HairlineItalic_TRIAL.woff") format("woff");
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            /* Thin */
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Thin_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Thin_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Thin_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Thin_TRIAL.woff") format("woff");
+                font-weight: 100;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-ThinItalic_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-ThinItalic_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-ThinItalic_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-ThinItalic_TRIAL.woff") format("woff");
+                font-weight: 100;
+                font-style: italic;
+            }
+
+            /* Extra Light */
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-ExtraLight_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-ExtraLight_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-ExtraLight_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-ExtraLight_TRIAL.woff") format("woff");
+                font-weight: 200;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-ExtraLightItalic_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-ExtraLightItalic_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-ExtraLightItalic_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-ExtraLightItalic_TRIAL.woff") format("woff");
+                font-weight: 200;
+                font-style: italic;
+            }
+
+            /* Light */
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Light_TRIAL.woff") format("woff");
+                font-weight: 300;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-LightItalic_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-LightItalic_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-LightItalic_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-LightItalic_TRIAL.woff") format("woff");
+                font-weight: 300;
+                font-style: normal;
+            }
+
+            /* Regular */
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Regular_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Regular_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Regular_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Regular_TRIAL.woff") format("woff");
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-RegularItalic_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-RegularItalic_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-RegularItalic_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-RegularItalic_TRIAL.woff") format("woff");
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            /* Medium */
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Medium_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Medium_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Medium_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Medium_TRIAL.woff") format("woff");
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-MediumItalic_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-MediumItalic_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-MediumItalic_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-MediumItalic_TRIAL.woff") format("woff");
+                font-weight: 500;
+                font-style: italic;
+            }
+
+            /* Bold */
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Bold_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Bold_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Bold_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Bold_TRIAL.woff") format("woff");
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-BoldItalic_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-BoldItalic_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-BoldItalic_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-BoldItalic_TRIAL.woff") format("woff");
+                font-weight: 700;
+                font-style: italic;
+            }
+            
+            /* Black */            
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Black_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-Black_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Black_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-Black_TRIAL.woff") format("woff");
+                font-weight: 800;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: OutputSansWeb;
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-BlackItalic_TRIAL.eot");
+                src: url("https://djr.com/assets/fonts/Output/full/OutputSans-BlackItalic_TRIAL.eot?#iefix") format("embedded-opentype"), url("https://djr.com/assets/fonts/Output/full/OutputSans-BlackItalic_TRIAL.woff2") format("woff2"), url("https://djr.com/assets/fonts/Output/full/OutputSans-BlackItalic_TRIAL.woff") format("woff");
+                font-weight: 800;
+                font-style: italic;
+            }
+
+
+            /* Example styles */
+            body {
+                font-size: 20px;
+                line-height: 140%;
+                margin: 1em;
+            }
+            h1 {
+                font-family: OutputSansWebHair;
+                font-weight: normal;
+                font-size: 300%;
+                line-height: 100%;
+            }
+
+            p {
+                font-family: OutputSansWeb;
+                max-width: 50em;
+            }
+            
+            em {
+                font-style: italic;
+            }
         
         </style>
     </head>
     <body>
-        <p style="font-family: OutputSansWeb">This is Output. The unexpected is our normal routine. What's a knock-out like you doing in a computer-generated gin joint like this? When has justice ever been as simple as a rule book? You bet I'm agitated! I may be surrounded by insanity, but I am not insane. Fear is the true enemy, the only enemy. Flair is what marks the difference between artistry and mere competence. Ensign Babyface! Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? A lot of things can change in twelve years, Admiral. When has justice ever been as simple as a rule book? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We finished our first sensor sweep of the neutral zone. Why don't we just give everybody a promotion and call it a night - 'Commander'? I'm afraid I still don't understand, sir.</p>
+    
+    
+        <h1>Output Sans Webfont Test</h1>
+    
+        <p style="font-weight: 100">This is Output Thin. The unexpected is our normal routine. When has justice ever been as simple as a rule book? You bet I'm agitated! I may be surrounded by insanity, but I am not insane. Fear is the true enemy, the only enemy. Flair is what marks the difference between artistry and mere competence. Ensign Babyface! Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? A lot of things can change in twelve years, Admiral. When has justice ever been as simple as a rule book? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We finished our first sensor sweep of the neutral zone. Why don't we just give everybody a promotion and call it a night - 'Commander'? I'm afraid I still don't understand, sir.</p>
+        <p style="font-weight: 200">This is Output Extra Light. The unexpected is our normal routine. When has justice ever been as simple as a rule book? You bet I'm agitated! I may be surrounded by insanity, but I am not insane. Fear is the true enemy, the only enemy. Flair is what marks the difference between artistry and mere competence. Ensign Babyface! Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? A lot of things can change in twelve years, Admiral. When has justice ever been as simple as a rule book? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We finished our first sensor sweep of the neutral zone. Why don't we just give everybody a promotion and call it a night - 'Commander'? I'm afraid I still don't understand, sir.</p>
+        <p style="font-weight: 300">This is Output Light. The unexpected is our normal routine. When has justice ever been as simple as a rule book? You bet I'm agitated! I may be surrounded by insanity, but I am not insane. Fear is the true enemy, the only enemy. Flair is what marks the difference between artistry and mere competence. Ensign Babyface! Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? A lot of things can change in twelve years, Admiral. When has justice ever been as simple as a rule book? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We finished our first sensor sweep of the neutral zone. Why don't we just give everybody a promotion and call it a night - 'Commander'? I'm afraid I still don't understand, sir.</p>
+        <p>This is Output. The unexpected is our normal routine. When has justice ever been as simple as a rule book? You bet I'm agitated! I may be surrounded by insanity, but I am not insane. Fear is the true enemy, the only enemy. Flair is what marks the difference between artistry and mere competence. Ensign Babyface! Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? A lot of things can change in twelve years, Admiral. When has justice ever been as simple as a rule book? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We finished our first sensor sweep of the neutral zone. Why don't we just give everybody a promotion and call it a night - 'Commander'? I'm afraid I still don't understand, sir.</p>
+        <p style="font-weight: 500">This is Output Medium. The unexpected is our normal routine. When has justice ever been as simple as a rule book? You bet I'm agitated! I may be surrounded by insanity, but I am not insane. Fear is the true enemy, the only enemy. Flair is what marks the difference between artistry and mere competence. Ensign Babyface! Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? A lot of things can change in twelve years, Admiral. When has justice ever been as simple as a rule book? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We finished our first sensor sweep of the neutral zone. Why don't we just give everybody a promotion and call it a night - 'Commander'? I'm afraid I still don't understand, sir.</p>
+        <p style="font-weight: 700">This is Output Bold. The unexpected is our normal routine. When has justice ever been as simple as a rule book? You bet I'm agitated! I may be surrounded by insanity, but I am not insane. Fear is the true enemy, the only enemy. Flair is what marks the difference between artistry and mere competence. Ensign Babyface! Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? A lot of things can change in twelve years, Admiral. When has justice ever been as simple as a rule book? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We finished our first sensor sweep of the neutral zone. Why don't we just give everybody a promotion and call it a night - 'Commander'? I'm afraid I still don't understand, sir.</p>
+        <p style="font-weight: 800">This is Output Black. The unexpected is our normal routine. When has justice ever been as simple as a rule book? You bet I'm agitated! I may be surrounded by insanity, but I am not insane. Fear is the true enemy, the only enemy. Flair is what marks the difference between artistry and mere competence. Ensign Babyface! Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? A lot of things can change in twelve years, Admiral. When has justice ever been as simple as a rule book? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We finished our first sensor sweep of the neutral zone. Why don't we just give everybody a promotion and call it a night - 'Commander'? I'm afraid I still don't understand, sir.</p>
     </body>
 
 </html>
